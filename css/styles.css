@@ -1,57 +1,101 @@
 body {
-    background-color:lightgrey;
-    
-    
+  background-color: lightgrey;
+  
+
 }
-h1, h2{
-    text-align: center;
+
+h1 {
+  text-align: center;
+  font-size: 50px;
 }
-.img
-{
-    height:200px;
+h2{
+  text-align: center;
+}
+
+.img {
+  height: 200px;
 }
 
 
-.menu{
+.menu {
   list-style-type: none;
-  margin: 0;
-    padding: 0;
-  width: 25%;
+  overflow: hidden;
   background-color: aliceblue;
-  height: 100%;
-  position: fixed;
-  overflow: auto;
-  max-width: 150px;
+  height: 50px;
 }
-.menubox{
+.menu2{
+  /*lists in div*/
+  margin: 0;
+}
+
+.menubox {
+  float: left;
   display: block;
-  padding: 8px 16px;
+  padding: 8px 15px;
+  font-size: 17px;
+  height: 50px;
   text-decoration: none;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.menubox:hover{
-  background-color: rgb(48, 48, 48);
-}
-a{
-    color: black;
+
+.menubox:hover {
+  background-color: grey;
+  }
+
+  .sidemenu {
+    
+    margin-top: 0px;
+    position: fixed;
+    list-style-type: none;
+    width: 25px;
+    overflow: auto;
+    background-color: aliceblue;
+    height: 140px;
+    
+  }
+  .sidemenu2{
+    /*lists in div*/
+    padding-left:0px;
+  }
+  
+  .sidemenubox {
+    float: center;
+    display: block;
+    padding: 5px;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .sidemenubox:hover {
+    background-color: grey;
+    }
+
+a {
+  color: black;
 }
 
-  a:visited {
-    color: black;
-  }
-  
-  a:hover {
-    color: white;
-  }
-  
-  a:active {
-    color: white;
-  }
-  .active{
-    background-color: gray;
-    color: white;
-  }
-.text{
-  color:black;
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+.active {
+  background-color: gray;
+  color: white;
+}
+
+.text {
+  color: black;
+  list-style-type: none;
+  margin-left:200px;
 }
