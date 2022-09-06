@@ -15,19 +15,20 @@ h1, h2{
 .menu{
   list-style-type: none;
   margin: 0;
-  
-  padding: 0;
+    padding: 0;
   width: 25%;
   background-color: aliceblue;
   height: 100%;
   position: fixed;
   overflow: auto;
+  max-width: 150px;
 }
 .menubox{
   display: block;
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .menubox:hover{
   background-color: rgb(48, 48, 48);
@@ -50,7 +51,4 @@ a{
   .active{
     background-color: gray;
     color: white;
-  }
-  .text {
-    color: red;
   }
