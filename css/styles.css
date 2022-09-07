@@ -22,8 +22,18 @@ h2 {
 .text {
   color: black;
   list-style-type: none;
+}
+
+.generaltextbox{
+  padding: 10px 15px;
+  margin-top: 10px;
+  float: center;
+  border: 1px solid black;
+  border-radius: 2%;
   margin-left: 60px;
-  margin-top: 0;
+  width: 60vh;
+  height: 75vh;
+  background-color: rgba(128, 128, 128, 0.59);
 }
 
 /*--------------------Menu---------------------*/
@@ -34,6 +44,7 @@ h2 {
   background-color: aliceblue;
   height: 50px;
   padding-left: 5px;
+  border: 1px solid black;
 }
 
 .menu2 {
@@ -56,7 +67,7 @@ h2 {
   background-color: grey;
 }
 
-/*-------------------Link color----------------------*/
+/*-------------------Links color----------------------*/
 
 a {
   color: black;
@@ -79,7 +90,7 @@ a:active {
   color: white;
 }
 
-/*-----------------------------------------*/
+/*-------------------Side bar----------------------*/
 
 .sidemenu {
   border: 1px solid black;
@@ -133,3 +144,39 @@ a:active {
 }
 
 /*-----------------------------------------*/
+
+.studyprogressbarY1{
+  overflow: hidden;
+  background-color: white;
+  height: 50px;
+  width: 75%;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.studyprogressY1{
+  background-color: green;
+  height: 100%;
+  width: 1%; /* Behaald aantal punten / totaal aantal punten(Y1/60EC) * 100 */
+}
+
+.studyprogressbar{
+  background-color: white;
+  height: 50px;
+  width: 75%;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.studyprogress{
+  background-color: green;
+  height: 102%;
+  width: 0%; /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
+  margin-top: -1px;
+}
+
+.studyprogresstext{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
