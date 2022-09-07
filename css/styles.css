@@ -50,7 +50,7 @@ h2{
     list-style-type: none;
     width: 25px;
     overflow: auto;
-    background-color: aliceblue;
+    
     height: 140px;
     
   }
@@ -99,3 +99,26 @@ a:active {
   list-style-type: none;
   margin-left:200px;
 }
+
+.sidemenu{
+  height: 75vh;
+  width: 45px;
+  background-color: aliceblue;
+  transition: width 0.3s;
+  overflow: hidden;
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+
+.sidemenu:hover{
+  width: 160px;
+  overflow: visible;
+}
+
+.imgsidebar{
+  width: 160px;
+}
+
+
+
