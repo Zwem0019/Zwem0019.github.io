@@ -1,3 +1,5 @@
+/*--------------------General--------------------*/
+
 body {
   background-color: lightgrey;
 
@@ -17,6 +19,14 @@ h2 {
   height: 200px;
 }
 
+.text {
+  color: black;
+  list-style-type: none;
+  margin-left: 60px;
+  margin-top: 0;
+}
+
+/*--------------------Menu---------------------*/
 
 .menu {
   list-style-type: none;
@@ -29,7 +39,6 @@ h2 {
 .menu2 {
   /*lists in div*/
   margin: 0;
-  
 }
 
 .menubox {
@@ -41,36 +50,13 @@ h2 {
   text-decoration: none;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-
-  
 }
 
 .menubox:hover {
   background-color: grey;
 }
 
-.sidemenu {
-  padding-top: 1px;
-  margin-top: 0px;
-  position: fixed;
-  list-style-type: none;
-  width: 25px;
-  overflow: auto;
-
-  height: 140px;
-
-}
-
-.sidemenu2 {
-  /*lists in div*/
-  padding-left: 0px;
-}
-
-
-
-.sidemenubox:hover {
-  background-color: grey;
-}
+/*-------------------Link color----------------------*/
 
 a {
   color: black;
@@ -93,18 +79,11 @@ a:active {
   color: white;
 }
 
-.text {
-  color: black;
-  list-style-type: none;
-  margin-left: 60px;
-  margin-top: 0;
-}
-
-
+/*-----------------------------------------*/
 
 .sidemenu {
   border: 1px solid black;
-  padding:0;
+  padding: 0;
   height: 55px;
   width: 45px;
   background-color: aliceblue;
@@ -116,9 +95,14 @@ a:active {
   left: 0;
 }
 
+.sidemenu2 {
+  /*lists in div*/
+  padding-left: 0px;
+}
+
 .sidemenu:hover {
   width: 160px;
-  height: 30vh;
+  height: 230px;
   overflow: visible;
 }
 
@@ -131,12 +115,14 @@ a:active {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.topbox{
-  margin-top: -16px;
+
+.sidemenubox:hover {
+  background-color: grey;
 }
 
-
-
+.topbox {
+  margin-top: -16px;
+}
 
 .imgsidebar {
   width: 160px;
@@ -145,3 +131,5 @@ a:active {
 .imgsidebar2 {
   width: 30px;
 }
+
+/*-----------------------------------------*/
