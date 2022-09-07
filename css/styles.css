@@ -1,6 +1,6 @@
 body {
   background-color: lightgrey;
-  
+
 
 }
 
@@ -8,7 +8,8 @@ h1 {
   text-align: center;
   font-size: 50px;
 }
-h2{
+
+h2 {
   text-align: center;
 }
 
@@ -23,7 +24,8 @@ h2{
   background-color: aliceblue;
   height: 50px;
 }
-.menu2{
+
+.menu2 {
   /*lists in div*/
   margin: 0;
 }
@@ -41,37 +43,38 @@ h2{
 
 .menubox:hover {
   background-color: grey;
-  }
+}
 
-  .sidemenu {
-    
-    margin-top: 0px;
-    position: fixed;
-    list-style-type: none;
-    width: 25px;
-    overflow: auto;
-    
-    height: 140px;
-    
-  }
-  .sidemenu2{
-    /*lists in div*/
-    padding-left:0px;
-  }
-  
-  .sidemenubox {
-    float: center;
-    display: block;
-    padding: 5px;
-    font-size: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .sidemenubox:hover {
-    background-color: grey;
-    }
+.sidemenu {
+
+  margin-top: 0px;
+  position: fixed;
+  list-style-type: none;
+  width: 25px;
+  overflow: auto;
+
+  height: 140px;
+
+}
+
+.sidemenu2 {
+  /*lists in div*/
+  padding-left: 0px;
+}
+
+.sidemenubox {
+  float: center;
+  display: block;
+  padding: 5px;
+  font-size: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidemenubox:hover {
+  background-color: grey;
+}
 
 a {
   color: black;
@@ -97,28 +100,29 @@ a:active {
 .text {
   color: black;
   list-style-type: none;
-  margin-left:200px;
+  margin-left: 200px;
 }
 
-.sidemenu{
+.sidemenu {
   height: 75vh;
   width: 45px;
   background-color: aliceblue;
   transition: width 0.3s;
   overflow: hidden;
-  position: absolute;
-  top: 200px;
+  position: sticky;
+  bottom: 0;
   left: 0;
 }
 
-.sidemenu:hover{
+.sidemenu:hover {
   width: 160px;
   overflow: visible;
 }
 
-.imgsidebar{
+.imgsidebar {
   width: 160px;
 }
 
-
-
+.imgsidebar2 {
+  width: 30px;
+}
