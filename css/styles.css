@@ -23,11 +23,13 @@ h2 {
   overflow: hidden;
   background-color: aliceblue;
   height: 50px;
+  padding-left: 5px;
 }
 
 .menu2 {
   /*lists in div*/
   margin: 0;
+  
 }
 
 .menubox {
@@ -39,6 +41,8 @@ h2 {
   text-decoration: none;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+
+  
 }
 
 .menubox:hover {
@@ -46,7 +50,7 @@ h2 {
 }
 
 .sidemenu {
-
+  padding-top: 1px;
   margin-top: 0px;
   position: fixed;
   list-style-type: none;
@@ -101,7 +105,10 @@ a:active {
   color: black;
   list-style-type: none;
   margin-left: 200px;
+  margin-top: -75vh;
 }
+
+
 
 .sidemenu {
   height: 75vh;
