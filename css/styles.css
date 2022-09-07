@@ -105,12 +105,14 @@ a:active {
   color: black;
   list-style-type: none;
   margin-left: 180px;
-  margin-top: -75vh;
+  margin-top: -90vh;
 }
 
 
 
 .sidemenu {
+  margin-top: 149px;
+  margin-bottom: 200px;
   height: 75vh;
   width: 45px;
   background-color: aliceblue;
