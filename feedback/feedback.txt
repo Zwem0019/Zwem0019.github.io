@@ -1,7 +1,39 @@
+Checklist
+
+Algemeen
+
+Locatie van projectfolder - op een logische plaats, zonder spaties in namen
+
+Namen van bestand en folders - Naamgeving is betekenisvol, zonder hoofdletters, spaties
+en speciale karakters.
+
+Maximale regellengte - 140 karakters max 
+
+Opdrachtspecificatie - voldoet het aan alle eisen en wensen?
+
+HTML
+/*
+Zijn er de juiste Semantic tags gebruikt?
+Zijn de parent and child elements juist weergegeven?
+Is er onnodig hoofdletter gebruik?
+Zijn er teveel wit regels gebruikt/zijn de wit regels inconsistent?
+Zijn de regellengtes niet te lang?
+*/
 
 
-article centraal
-sematic text
-aside menu sematic text
-enters tussen 
-beter
+Comments - per onderwerp
+
+Lege regels - niet op onnodige plekken, igg consistent
+
+De juiste (semantische) tags - ipv <div> dingen als <article> <header>, etc.
+
+Gebruik van class/id - waar mogelijk id en anders class
+
+Naamgeving class/id
+
+CSS 
+
+Verspreiden van CSS bestanden - groeperen per onderwerp(bv. navbar, content)
+
+Selectors - combineren waar mogelijk
+
