@@ -2,8 +2,6 @@
 
 body {
   background-color: lightgrey;
-
-
 }
 
 h1 {
@@ -24,7 +22,7 @@ h2 {
   list-style-type: none;
 }
 
-.generaltextbox{
+.generaltextbox {
   padding: 10px 15px;
   margin-top: 10px;
   float: center;
@@ -114,7 +112,7 @@ a:active {
 .sidemenu:hover {
   width: 165px;
   height: 229px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .sidemenubox {
@@ -143,9 +141,9 @@ a:active {
   width: 30px;
 }
 
-/*-----------------------------------------*/
+/*-------------------Study progress bar----------------------*/
 
-.studyprogressbarY1{
+.studyprogressbarY1 {
   overflow: hidden;
   background-color: white;
   height: 50px;
@@ -154,13 +152,14 @@ a:active {
   border: 3px solid black;
 }
 
-.studyprogressY1{
+.studyprogressY1 {
   background-color: green;
   height: 100%;
-  width: 1%; /* Behaald aantal punten / totaal aantal punten(Y1/60EC) * 100 */
+  width: 1%;
+  /* Behaald aantal punten / totaal aantal punten(Y1/60EC) * 100 */
 }
 
-.studyprogressbar{
+.studyprogressbar {
   background-color: white;
   height: 50px;
   width: 75%;
@@ -168,15 +167,30 @@ a:active {
   border: 3px solid black;
 }
 
-.studyprogress{
+.studyprogress {
   background-color: green;
   height: 102%;
-  width: 0%; /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
+  width: 0%;
+  /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
   margin-top: -1px;
 }
 
-.studyprogresstext{
+.studyprogresstext {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
+}
+
+.nbsaboundary {
+  height: 100%;
+  border-right: 3px solid black;
+  width: 75%;
+}
+
+.footer{
+ margin-top: 25px;
+ bottom: 0;
+ width: 100%; 
+ height: 100px;
+ background-color: rgba(128, 128, 128, 0.299);
 }
