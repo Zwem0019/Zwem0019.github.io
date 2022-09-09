@@ -75,6 +75,16 @@ footer {
   padding: 10px;
 }
 
+.faq {
+  height: 50px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.faq:hover {
+  height: 200px;
+}
+
 /*-------------------Links color----------------------*/
 
 a {
