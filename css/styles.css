@@ -19,6 +19,17 @@ h2 {
   height: 200px;
 }
 
+.imgstanding {
+  width: 200px;
+}
+
+#homeimg {
+  width: 75%;
+  margin: auto 13%;
+  border-radius: 5%;
+  border: 2px solid grey;
+}
+
 .footerlinks {
   list-style-type: none;
   text-decoration: none;
@@ -34,10 +45,23 @@ article {
   float: center;
   border: 1px solid black;
   border-radius: 2%;
-  margin-left: 60px;
+  margin-left: auto;
+  margin-right: auto;
   width: 545px;
-  height: 700px;
+  height: 1100px;
   background-color: rgba(128 128 128 / 59%);
+  overflow: hidden;
+}
+
+section {
+  padding: 10px 15px;
+  margin-top: 50px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 150px;
+  background-color: rgba(128 128 128 / 75%);
   overflow: hidden;
 }
 
@@ -49,6 +73,29 @@ footer {
   background-color: rgba(128 128 128 / 29.9%);
   border: 1px solid rgba(0 0 0 / 32%);
   padding: 10px;
+}
+
+/*-------------------Links color----------------------*/
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+.active {
+  background-color: gray;
+  color: white;
 }
 
 /*--------------------Menu---------------------*/
@@ -82,29 +129,6 @@ footer {
   background-color: grey;
 }
 
-/*-------------------Links color----------------------*/
-
-a {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: white;
-}
-
-a:active {
-  color: white;
-}
-
-.active {
-  background-color: gray;
-  color: white;
-}
-
 /*-------------------Side bar----------------------*/
 
 aside {
@@ -117,7 +141,7 @@ aside {
   transition: height 0.5s;
   overflow: hidden;
   position: fixed;
-  top: 250px;
+  top: 200px;
   left: 0;
 }
 
