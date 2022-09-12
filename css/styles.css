@@ -93,10 +93,15 @@ footer {
 
 /*-------------------Dashboard----------------------*/
 
+table {
+  background-color: rgba(240 248 255 / 50%);
+  border-radius: 15px;
+}
+
 table,
 th,
 td {
-  margin: 10px auto;
+  margin: 50px auto;
   border: 1px solid black;
   padding: 10px;
 }
