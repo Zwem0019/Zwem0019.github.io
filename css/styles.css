@@ -91,6 +91,20 @@ footer {
   height: 180px;
 }
 
+/*-------------------Dashboard----------------------*/
+
+table,
+th,
+td {
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: grey;
+}
+
 /*-------------------Links color----------------------*/
 
 a {
