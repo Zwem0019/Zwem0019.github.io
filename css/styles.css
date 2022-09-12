@@ -58,17 +58,21 @@ footer {
 .img {
   height: 200px;
   margin: 5px;
+  border: 1px solid grey;
+  border-radius: 15px;
 }
 
 .imgstanding {
   width: 200px;
   margin: 5px;
+  border: 1px solid grey;
+  border-radius: 15px;
 }
 
 .homeimg {
   width: 75%;
   margin: auto 13%;
-  border-radius: 5%;
+  border-radius: 15px;
   border: 2px solid grey;
 }
 
