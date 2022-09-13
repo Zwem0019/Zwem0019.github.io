@@ -97,6 +97,11 @@ footer {
   height: 180px;
 }
 
+.blogpost:hover {
+  transform: scale(1.019);
+  transition: 0.2s;
+}
+
 /*-------------------Dashboard----------------------*/
 
 table {
