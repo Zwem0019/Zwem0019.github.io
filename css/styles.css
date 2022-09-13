@@ -186,14 +186,13 @@ a:active {
 aside {
   border: 1px solid black;
   padding: 0;
-  height: 55px;
+  height: 50px;
   width: 45px;
   background-color: aliceblue;
-  transition: width 0.5s;
-  transition: height 0.5s;
+  transition: all 0.7s;
   overflow: hidden;
   position: fixed;
-  top: 200px;
+  top: 125px;
   left: 0;
 }
 
@@ -203,7 +202,8 @@ aside {
 }
 
 aside:hover {
-  width: 165px;
+  padding: 10px;
+  width: 185px;
   height: 229px;
   overflow: hidden;
 }
