@@ -79,6 +79,10 @@ footer {
   border: 2px solid grey;
 }
 
+.homeimg:hover {
+  border-color: white;
+}
+
 .footerlinks {
   list-style-type: none;
   text-decoration: none;
