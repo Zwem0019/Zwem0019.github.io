@@ -18,15 +18,15 @@ h3 {
   text-align: center;
 }
 
-article {
+article,
+main {
   padding: 10px 15px;
   margin-top: 10px;
-  float: center;
   border: 1px solid black;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 545px;
+  width: 75%;
   padding-bottom: 40px;
   background-color: rgba(128 128 128 / 59%);
   overflow: hidden;
@@ -79,8 +79,14 @@ footer {
   border: 2px solid grey;
 }
 
+.linkedimg {
+  border: 3px solid grey;
+}
+
 .linkedimg:hover {
   border-color: white;
+  transform: scale(1.019);
+  transition: 0.2s;
 }
 
 .footerlinks {
@@ -103,8 +109,8 @@ footer {
 }
 
 .blogpost:hover {
-  transform: scale(1.019);
-  transition: 0.2s;
+  transform: scale(1.01);
+  transition: 0.05s;
 }
 
 /*-------------------Dashboard----------------------*/
@@ -280,4 +286,25 @@ aside:hover {
   height: 100%;
   border-right: 3px solid black;
   width: 75%;
+}
+
+/*-------------------Photogallery----------------------*/
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.galleryimg {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
