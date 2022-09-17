@@ -32,6 +32,13 @@ main {
   overflow: hidden;
 }
 
+article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 section {
   padding: 10px 15px;
   margin-top: 50px;
@@ -74,13 +81,13 @@ footer {
 
 .homeimg {
   width: 75%;
-  margin: auto 13%;
+  max-width: 500px;
   border-radius: 15px;
   border: 2px solid grey;
 }
 
 .linkedimg {
-  border: 3px solid grey;
+  border: 2px solid grey;
 }
 
 .linkedimg:hover {
@@ -295,7 +302,7 @@ aside:hover {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 15px 15px;
   max-width: 2000px;
   margin: 0 auto;
   padding: 20px 10px;
@@ -305,6 +312,6 @@ aside:hover {
   width: 100%;
   max-width: 350px;
   height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: fill;
+  border-radius: 15px;
 }
