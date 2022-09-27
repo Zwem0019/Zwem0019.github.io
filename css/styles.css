@@ -222,7 +222,7 @@ aside {
 aside:hover {
   padding: 10px;
   width: 185px;
-  height: 229px;
+  height: 280px;
   overflow: hidden;
 }
 
@@ -241,7 +241,7 @@ aside:hover {
 }
 
 .topbox {
-  margin-top: -16px;
+  margin-top: -12px;
 }
 
 .imgsidebar {
@@ -250,6 +250,11 @@ aside:hover {
 
 .imgsidebar2 {
   width: 30px;
+}
+
+.sidebaricon {
+  width: 30px;
+  height: 30px;
 }
 
 /*-------------------Study progress bar----------------------*/
