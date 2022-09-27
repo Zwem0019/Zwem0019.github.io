@@ -265,7 +265,7 @@ aside:hover {
 
 .studyprogressy1 {
   background-color: green;
-  height: 102%;
+  height: 103%;
   width: 1%; /* Behaald aantal punten / totaal aantal punten(Y1/60EC) * 100 */
 }
 
@@ -313,6 +313,6 @@ aside:hover {
   width: 100%;
   max-width: 350px;
   height: 300px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 15px;
 }
