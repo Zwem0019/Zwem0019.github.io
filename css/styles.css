@@ -145,6 +145,14 @@ th {
   background-color: grey;
 }
 
+.passed {
+  background-color: green;
+}
+
+.failed {
+  background-color: red;
+}
+
 /*-------------------Links color----------------------*/
 
 a {
@@ -318,7 +326,7 @@ aside:hover {
   }
 
   100% {
-    width: 1%; /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
+    width: 0.25%; /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
   }
 }
 
