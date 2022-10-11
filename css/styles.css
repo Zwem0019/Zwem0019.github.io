@@ -1,6 +1,11 @@
 /* stylelint-disable keyframes-name-pattern */
 /* stylelint-disable comment-whitespace-inside */
 
+:root {
+  --progress1: 4%;
+  --progressoveral: 1%;
+}
+
 /*--------------------General--------------------*/
 
 body {
@@ -150,7 +155,11 @@ th {
 }
 
 .failed {
-  background-color: red;
+  background-color: rgba(255 0 0 / 81.7%);
+}
+
+.ec {
+  text-align: center;
 }
 
 /*-------------------Links color----------------------*/
@@ -280,7 +289,7 @@ aside:hover {
 .studyprogressy1 {
   background-color: green;
   height: 102%;
-  animation: loadProgressY1 ease 3s;
+  animation: loadProgressY1 ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -298,7 +307,7 @@ aside:hover {
 .studyprogress {
   background-color: green;
   height: 102%;
-  animation: loadProgress ease 3s;
+  animation: loadProgress ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   margin-top: -0.5px;
@@ -316,7 +325,7 @@ aside:hover {
   }
 
   100% {
-    width: 1%; /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
+    width: var(--progress1); /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
   }
 }
 
@@ -326,7 +335,7 @@ aside:hover {
   }
 
   100% {
-    width: 0.25%; /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
+    width: var(--progressoveral); /* Behaald aantal punten / totaal aantal punten(Y1/240EC) * 100 */
   }
 }
 
