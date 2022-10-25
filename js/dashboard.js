@@ -121,7 +121,7 @@ function tableRender () {
         for (let m = 0; m < studymonitor[i].courses.length; m++) {
           for (let l = 0; l < studymonitor[i].courses[m].exam.length; l++) {
             rowspan++;
-          }
+          };
         }
         td1.setAttribute('rowspan', rowspan);
         tr.appendChild(td1);
@@ -135,7 +135,7 @@ function tableRender () {
             const td5 = document.createElement('td');
             td5.textContent = studymonitor[i].courses[j].exam[k].grade;
             td5.classList.add('grade');
-            td5.classList.add('grade');
+            td5.setAttribute('id', `${i}/${j}/${k}`);
             tr3.appendChild(td4);
             tr3.appendChild(td5);
             table.appendChild(tr3);
@@ -154,6 +154,7 @@ function tableRender () {
             const td5 = document.createElement('td');
             td5.textContent = studymonitor[i].courses[j].exam[k].grade;
             td5.classList.add('grade');
+            td5.setAttribute('id', `${i}/${j}/${k}`);
             tr2.appendChild(td2);
             tr2.appendChild(td3);
             tr2.appendChild(td4);
@@ -168,6 +169,7 @@ function tableRender () {
             const td5 = document.createElement('td');
             td5.textContent = studymonitor[i].courses[j].exam[k].grade;
             td5.classList.add('grade');
+            td5.setAttribute('id', `${i}/${j}/${k}`);
             tr3.appendChild(td4);
             tr3.appendChild(td5);
             table.appendChild(tr3);
@@ -185,6 +187,7 @@ function tableRender () {
             const td5 = document.createElement('td');
             td5.textContent = studymonitor[i].courses[j].exam[k].grade;
             td5.classList.add('grade');
+            td5.setAttribute('id', `${i}/${j}/${k}`);
             tr.appendChild(td2);
             tr.appendChild(td3);
             tr.appendChild(td4);
@@ -197,7 +200,6 @@ function tableRender () {
   }
   console.log(table);
 }
-tableRender();
 
 function calculateEc () {
   let ec = 0;
@@ -218,7 +220,6 @@ function calculateEc () {
   progressbar(ec);
   console.log(ec);
 }
-calculateEc();
 
 function progressbar (ec) {
   const nbsa = document.getElementById('NBSA');
@@ -239,3 +240,37 @@ function progressbar (ec) {
   css.style.setProperty('--progressy1', progressy1 + '%');
   css.style.setProperty('--progressoveral', progressoveral + '%');
 }
+
+function GradeListener () {
+  const grade = document.querySelectorAll('.grade');
+  for (let i = 0; i < grade.length; i++) {
+    grade[i].addEventListener('click', function () {
+      const input = document.createElement('input');
+      input.setAttribute('type', 'text');
+      input.setAttribute('value', grade[i].textContent);
+      input.classList.add('input');
+      grade[i].textContent = '';
+      grade[i].appendChild(input);
+      input.focus();
+      input.addEventListener('blur', function () {
+        const id = grade[i].getAttribute('id');
+        const idarray = id.split('/');
+        const ijk = idarray[0];
+        const jkl = idarray[1];
+        const klm = idarray[2];
+        studymonitor[ijk].courses[jkl].exam[klm].grade = input.value;
+        console.log(idarray);
+        grade[i].textContent = input.value;
+        calculateEc();
+        input.remove();
+      });
+    });
+  }
+}
+
+window.addEventListener('load', function () {
+  tableRender();
+  calculateEc();
+  GradeListener();
+}
+);
