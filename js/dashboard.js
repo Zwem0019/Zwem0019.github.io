@@ -218,7 +218,6 @@ function calculateEc () {
     }
   }
   progressbar(ec);
-  console.log(ec);
 }
 
 function progressbar (ec) {
@@ -258,9 +257,13 @@ function GradeListener () {
         const ijk = idarray[0];
         const jkl = idarray[1];
         const klm = idarray[2];
-        studymonitor[ijk].courses[jkl].exam[klm].grade = input.value;
-        console.log(idarray);
-        grade[i].textContent = input.value;
+        if (((input.value) * 1) === 0 || (isNaN(input.value))) {
+          studymonitor[ijk].courses[jkl].exam[klm].grade = 'Unknown';
+          grade[i].textContent = 'Unknown';
+        } else {
+          studymonitor[ijk].courses[jkl].exam[klm].grade = input.value;
+          grade[i].textContent = input.value;
+        }
         calculateEc();
         input.remove();
       });
