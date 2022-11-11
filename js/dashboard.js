@@ -10,7 +10,7 @@ const studymonitor = [
       {
         name: 'Computer Science Basics',
         ec: 5,
-        exam: [{ grade: 'Unknown', type: 'Written exam' }]
+        exam: [{ grade: 9.1, type: 'Written exam' }]
       },
       {
         name: 'Programming Basics',
