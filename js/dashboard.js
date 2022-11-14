@@ -15,7 +15,7 @@ const studymonitor = [
       {
         name: 'Programming Basics',
         ec: 5,
-        exam: [{ grade: 'Unknown', type: 'Case study exam' }]
+        exam: [{ grade: 9.6, type: 'Case study exam' }]
       }
     ]
 
