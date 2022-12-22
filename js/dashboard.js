@@ -28,7 +28,7 @@ const studymonitor = [
         name: 'Object Oriented Programming',
         ec: 10,
         exam: [
-          { grade: 'Unknown', type: 'Case study (50%)', percentage: 0.5 },
+          { grade: 10, type: 'Case study (50%)', percentage: 0.5 },
           { grade: 'Unknown', type: 'Project (50%)', percentage: 0.5 }]
       }
     ]
