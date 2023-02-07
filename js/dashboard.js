@@ -29,7 +29,7 @@ const studymonitor = [
         ec: 10,
         exam: [
           { grade: 10, type: 'Case study (50%)', percentage: 0.5 },
-          { grade: 'Unknown', type: 'Project (50%)', percentage: 0.5 }]
+          { grade: 8.5, type: 'Project (50%)', percentage: 0.5 }]
       }
     ]
 
