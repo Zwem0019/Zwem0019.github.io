@@ -41,7 +41,7 @@ const studymonitor = [
       {
         name: 'Framework Development 1',
         ec: 5,
-        exam: [{ grade: 'Unknown', type: 'Case study' }]
+        exam: [{ grade: 8.8, type: 'Case study' }]
       },
       {
         name: 'Framework Project 1',
@@ -198,7 +198,6 @@ function tableRender () {
       }
     }
   }
-  console.log(table);
 }
 
 function calculateEc () {
