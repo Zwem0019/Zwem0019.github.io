@@ -59,7 +59,7 @@ const studymonitor = [
     name: '4',
     courses: [
       {
-        name: 'Framework Development 2',
+        name: 'Framework Project 2',
         ec: 10,
         exam: [
           { grade: 'Unknown', type: 'Portfolio (50%)', percentage: 0.5 },
